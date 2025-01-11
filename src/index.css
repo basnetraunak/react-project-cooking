@@ -5,12 +5,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --primary: #f15025;
+  --black: #191919;
+  --gray: #e6e8e6;
+  --border: #ced0ce;
+  --cream: #fffdd0;
 }
 
 a {
@@ -28,6 +32,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: var(--black);
+  background-color: var(--cream);
+}
+body.dark {
+  background-color: var(--black);
+  color: var(--cream);
 }
 
 h1 {
